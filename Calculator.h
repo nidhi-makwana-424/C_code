@@ -2,7 +2,7 @@
 
  using namespace std;
 
- inline void show(){	
+ inline void programme(){	
  	 
  	 double a,b;
  	 char Operator;
