@@ -1,30 +1,32 @@
 #include<iostream>
-#include<calculator.h>
+#include"calculator.h"
 
 using namespace std;
 int main(){
+char op,a,b;
 
-char op, a, b;
-cout<<"enter an op(+,-,*,/): ";
+cout<<"enter an op(+,-,*,/):";
 cin>>op;
- cout<<"enter two values;";
+
+cout<<"enter two values;";
 cin>>a>>b;
-switch(op) {
+
+switch(op){
 case '+':
-cout<<a<<"+"<<b<<"="<<a+b<<endl;
-break;
- case '-':
-cout<<a<<"-"<<b<<"="<<a-b<<endl;
-break;
+  cout<<a<<"+"<<b<<"="<<a+b<<endl;
+  break;
+case '-':
+  cout<<a<<"-"<<b<<"="<<a-b<<endl;
+  break;
 case '*':
-cout<<a<<"*"<<b<<"="<<a*b<<endl;
-break;
+  cout<<a<<"*"<<b<<"="<<a*b<<endl;
+  break;
 case '/':
-cout<<a<<"/"<<b<<"="<<a/b<<endl;
-break;
+  cout<<a<<"/"<<b<<"="<<a/b<<endl;
+  break;
 default:
-cout<<"invalid value"<<endl;
-break;
+  cout<<"invalid value"<<endl;
+  break;
 }
 return 0;
 }
