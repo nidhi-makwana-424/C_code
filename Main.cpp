@@ -1,7 +1,7 @@
 #include "calculator.h"
 
 int main(){
-	show();
+	programme();
 	
 	return 0;
 }
