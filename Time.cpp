@@ -10,5 +10,5 @@ cout<<"enter a current date and time"
 
 <<date;
 
-return 0:
+return 0;
 }
