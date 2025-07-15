@@ -1,16 +1,30 @@
-#include<iostream>
+#include <iostream>
+using namespace std;
 
-#include<limits>
+int main() {
+    int a, b, c;
 
- using namespace std;
+    cout << "Enter three numbers: ";
+    cin >> a >> b >> c;
 
- int main() {
+    int max;
+    if (a > b && a > c)
+        max = a;
+    else if (b > c)
+        max = b;
+    else
+        max = c;
+   
+    int min;
+    if (a < b && a < c)
+        min = a;
+    else if (b < c)
+        min = b;
+    else
+        min = c;
 
- cout<<"the number of min"
+    cout << "Maximum number is: " << max << endl;
+    cout << "Minimum number is: " << min << endl;
 
-<<numeric_limits<int>::min()<<endl;
-
-cout<<"the number of max" <<numeric_limits<int>::max()<<endl;
-
- return 0;
+    return 0;
 }
